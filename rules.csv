@@ -1,0 +1,6 @@
+"Name","Description","Version","Priority","Expression","Status"
+"quantityRule","Multiply price by quantity",1,1,"#quantity * #basePrice","ACTIVE"
+"quantityDiscount","if more than one add 5% discount",1,2,"(#quantity > 1 ? 1 : 0) * -1 * #price * 5 / 100","ACTIVE"
+"goldCustomerDiscount","Additional 5% for GOLD customer",2,3,"(#customerType.equals(""GOLD"") ? 1 : 0) * -1 * #price * 5 /100","ACTIVE"
+"couponSAVE10","Additional 10% discount for this coupon",1,4,"(#coupon.equals(""SAVE10"")? 1 : 0) * -1 * #price * 10 / 100","ACTIVE"
+"tax","18% GST Nirmala Tai ko jaega",1,"1000","#price * 18/100","ACTIVE"
