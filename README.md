@@ -1,3 +1,6 @@
+**Problem Statement**
+You can find it here [PROBLEM STATEMENT.md](PROBLEM_STATEMENT.md)
+
 **Major design decisions**
  - Keep the data points as string, so that adding new data points does not require code changes. Add a validation layer for essential inputs
  - We will use Spring Expression language to build rules, because we cannot do a code change for a new rule
